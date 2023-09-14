@@ -32,7 +32,7 @@ int main()
     }
   }
 
-  cout << endl <<("Acertos: ") << cont++;
+  cout << endl <<("Acertos: ") << cont;
 
   cout << endl
        << endl;
