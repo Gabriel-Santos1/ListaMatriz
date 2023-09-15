@@ -20,7 +20,7 @@ int main() {
 
   for(int i=0; i<3; i++){
    
-    cout << ("Linha:") << i << (" ")<< aux[i] << endl;
+    cout << ("Linha:") << i << (" ") << aux[i] << endl;
   }
  
   cout << endl << endl;
