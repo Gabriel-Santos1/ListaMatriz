@@ -8,19 +8,24 @@ int main() {
   UINT CPAGE_DEFAULT = GetConsoleOutputCP();
   SetConsoleOutputCP(CPAGE_UTF8);
  
-  int soma[3][3],aux[3]= {0,0,0};
+  int soma[3][3],aux=0;
 
   for(int i=0; i<3; i++){
     for(int j=0; j<3; j++){
       cin >> soma[i][j];
-      aux[i] += soma[i][j];
+      aux+=soma[i][j];
     }
+    cout << aux << endl;
+    aux=0;
   }
   
 
   for(int i=0; i<3; i++){
-   
-    cout << ("Linha:") << i << (" ") << aux[i] << endl;
+    for(int j=0; j<3; j++){
+      aux+=soma[i][j];
+    }
+    cout << ("Coluna:") << i << (" ")<< aux << endl;
+    aux=0;
   }
  
   cout << endl << endl;
